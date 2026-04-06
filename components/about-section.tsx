@@ -5,10 +5,10 @@ import { ScrollAnimationWrapper } from './scroll-animation-wrapper';
 
 export function AboutSection() {
   const values = [
-    { icon: '⚙️', title: 'Precision', description: 'Every product crafted with meticulous attention to detail' },
-    { icon: '🔬', title: 'Innovation', description: 'Constantly pushing boundaries with advanced technology' },
-    { icon: '🤝', title: 'Partnership', description: 'Building long-term relationships with our clients' },
-    { icon: '🌍', title: 'Sustainability', description: 'Committed to environmentally responsible practices' },
+    { icon: '💧', title: 'Quality', description: 'ISO 9001:2008 certified manufacturing process' },
+    { icon: '⚡', title: 'Efficiency', description: 'BIS-marked energy efficient pump solutions' },
+    { icon: '🏭', title: 'Excellence', description: 'State-of-the-art facility in Coimbatore' },
+    { icon: '🌾', title: 'Trust', description: 'Trusted by farmers and industries across India' },
   ];
 
   return (
@@ -21,10 +21,10 @@ export function AboutSection() {
                 About Jai Jansi Industries
               </h2>
               <p className="text-foreground/70 text-lg mb-4">
-                Founded in 2005, Jai Jansi Industries has emerged as a leading manufacturer of premium industrial products. Our journey is marked by consistent innovation, unwavering quality commitment, and customer-centric approach.
+                Established in Coimbatore, Tamil Nadu, Jai Jansi Industries is a trusted manufacturer of high-quality submersible pumps, centrifugal pumps, motors, and allied equipment. With 30+ years of excellence, we serve farmers, contractors, and industrial clients across India.
               </p>
               <p className="text-foreground/70 text-lg mb-8">
-                We specialize in manufacturing a diverse range of products that cater to multiple industries, ensuring each product meets the highest standards of quality and performance.
+                ISO 9001:2008 Certified, we offer a complete range from 0.5 HP to 100+ HP pump solutions. Our commitment to quality, innovation, and customer satisfaction has made us leaders in water management and industrial pumping solutions.
               </p>
               <button className="px-8 py-3 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg font-semibold transition-colors">
                 Learn More

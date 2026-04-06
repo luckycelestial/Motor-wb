@@ -6,10 +6,10 @@ import { AnimatedCounter } from './animated-counter';
 
 export function StatsSection() {
   const stats = [
-    { label: 'Years of Excellence', value: 19, suffix: '+' },
-    { label: 'Products Manufactured', value: 50000, suffix: '+' },
-    { label: 'Global Clients', value: 500, suffix: '+' },
-    { label: 'Team Members', value: 450, suffix: '+' },
+    { label: 'Years of Manufacturing Experience', value: 30, suffix: '+' },
+    { label: 'Product Categories', value: 12, suffix: '+' },
+    { label: 'Pumps Delivered Across India', value: 10000, suffix: '+' },
+    { label: 'Satisfied Industrial Clients', value: 500, suffix: '+' },
   ];
 
   return (

@@ -22,7 +22,7 @@ export function ManufacturingSection() {
               Our Manufacturing Process
             </h2>
             <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
-              A comprehensive approach to quality that ensures excellence at every step.
+              Our state-of-the-art manufacturing process ensures every pump meets ISO 9001:2008 standards and exceeds customer expectations.
             </p>
           </div>
         </ScrollAnimationWrapper>

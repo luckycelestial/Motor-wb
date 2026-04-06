@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 
 export function HeroSection() {
-  const words = ['Innovation', 'Quality', 'Excellence', 'Solutions'];
+  const words = ['Precision', 'Reliability', 'Efficiency', 'Solutions'];
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-10 px-4 sm:px-6 lg:px-8">
@@ -21,9 +21,9 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
           className="mb-6"
         >
-          <p className="text-primary text-lg font-semibold mb-4">Welcome to Jai Jansi Industries</p>
+          <p className="text-primary text-lg font-semibold mb-4">HI-FLOW Pumps — Powering India's Water Future</p>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-6" style={{ fontFamily: 'var(--font-bebas)' }}>
-            <span className="block mb-2">Manufacturing Excellence Through</span>
+            <span className="block mb-2">Premium Submersible & Centrifugal Pumps</span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-secondary">
               {words.map((word, index) => (
                 <motion.span
@@ -45,7 +45,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto"
         >
-          Delivering superior quality industrial products and solutions that drive innovation and efficiency across industries since 2005.
+          30+ years of manufacturing excellence. ISO 9001:2008 certified. Serving farmers, contractors, and industries across India with high-quality pump solutions from 0.5 HP to 100+ HP.
         </motion.p>
 
         <motion.div

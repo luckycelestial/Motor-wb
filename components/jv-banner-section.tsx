@@ -26,13 +26,13 @@ export function JVBannerSection() {
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-6">
             <ScrollAnimationWrapper>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4" style={{ fontFamily: 'var(--font-bebas)' }}>
-                Strategic Partnerships
+                Joint Ventures & Distribution
               </h2>
             </ScrollAnimationWrapper>
 
             <ScrollAnimationWrapper delay={0.2}>
               <p className="text-lg text-foreground/90 mb-8 max-w-2xl">
-                Explore collaboration opportunities and joint venture possibilities with Jai Jansi Industries. Let's grow together.
+                Open to joint ventures and overseas distribution tie-ups. Partner with a trusted ISO 9001:2008 certified manufacturer serving India for 30+ years.
               </p>
             </ScrollAnimationWrapper>
 

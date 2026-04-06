@@ -43,14 +43,18 @@ export function ContactSection() {
   const productCategory = watch('product');
 
   const productCategories = [
-    'Precision Bearings',
-    'Industrial Gears',
-    'Hydraulic Components',
-    'Control Systems',
-    'Metal Fasteners',
-    'Power Transmission',
-    'Custom Solutions',
-    'Other',
+    'Borewell Submersible Pumps',
+    'SS304 Stainless Steel Submersible Pumps',
+    'Open Well Submersible Pumps',
+    'Self-Priming Centrifugal Monoblock',
+    'Centrifugal Monoblock Pumps',
+    'Jet Pump Sets',
+    'Special Application Submersible Pumps',
+    'Borewell Compressor Pumps & Motors',
+    'Energy Efficient AC Induction Motors',
+    'Industrial Air Compressors',
+    'Vehicle Washers / High Pressure Washers',
+    'Other / General Inquiry',
   ];
 
   const onSubmit = async (data: ContactFormData) => {
@@ -73,12 +77,12 @@ export function ContactSection() {
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91-XXX-XXX-XXXX',
+      value: '0422-2560104 / 0422-2565090',
     },
     {
       icon: MapPin,
       label: 'Address',
-      value: 'Jai Jansi Industrial Park, City, State 000000',
+      value: 'SF No 301, Duraisamy Layout, Avarampalayam, Coimbatore – 641006, Tamil Nadu, India',
     },
   ];
 

@@ -8,27 +8,27 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 export function TestimonialsSection() {
   const testimonials = [
     {
-      name: 'Rajesh Kumar',
-      company: 'TechCorp Industries',
-      text: 'Jai Jansi Industries has been our trusted partner for 5 years. Their products consistently exceed our expectations in quality and reliability.',
+      name: 'Farmer, Tamil Nadu',
+      company: 'Agriculture Sector',
+      text: 'Jai Jansi&apos;s submersible pumps have been reliable for over a decade. Great efficiency and outstanding after-sales support. Highly recommend for irrigation!',
       rating: 5,
     },
     {
-      name: 'Priya Sharma',
-      company: 'Global Manufacturing Ltd',
-      text: 'Outstanding service and exceptional product quality. The team is highly responsive and professional. Highly recommend!',
+      name: 'Industrial Contractor',
+      company: 'Water Supply Systems',
+      text: 'ISO certified quality and BIS-marked efficiency. Their pumps perform exceptionally well across various applications. Best value for money.',
       rating: 5,
     },
     {
-      name: 'Amit Patel',
-      company: 'Precision Engineering Co.',
-      text: 'The customization options and technical support are unmatched. They truly understand our industry needs.',
+      name: 'Plant Manager',
+      company: 'Manufacturing Unit',
+      text: 'Dependable, energy-efficient, and backed by excellent technical support. We trust Jai Jansi for critical water management applications.',
       rating: 5,
     },
     {
-      name: 'Sarah Johnson',
-      company: 'International Solutions Inc.',
-      text: 'Reliable, professional, and committed to excellence. Jai Jansi has become an integral part of our supply chain.',
+      name: 'District Coordinator',
+      company: 'Government Project',
+      text: 'Proudly made in India. Jai Jansi&apos;s commitment to quality and customer service sets them apart. Perfect for public water supply projects.',
       rating: 5,
     },
   ];

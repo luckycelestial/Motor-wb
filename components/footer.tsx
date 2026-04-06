@@ -26,7 +26,7 @@ export function Footer() {
               <span className="text-foreground"> INDUSTRIES</span>
             </div>
             <p className="text-foreground/70 text-sm mb-6">
-              Manufacturing excellence through innovation, quality, and reliability.
+              HI-FLOW Pumps — Powering India's Water Future. ISO 9001:2008 Certified manufacturer of premium submersible and centrifugal pumps.
             </p>
             <div className="flex gap-4">
               {[Linkedin, Facebook, Twitter].map((Icon, index) => (
@@ -103,15 +103,15 @@ export function Footer() {
                 <span>info@jaijansi.com</span>
               </a>
               <a
-                href="tel:+911234567890"
+                href="tel:+919842267330"
                 className="flex items-center gap-3 text-foreground/70 hover:text-primary transition-colors text-sm"
               >
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                <span>+91-XXX-XXX-XXXX</span>
+                <span>+91 98422 67330</span>
               </a>
               <div className="flex items-start gap-3 text-foreground/70 text-sm">
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-1" />
-                <span>Jai Jansi Industrial Park</span>
+                <span>SF No 301, Avarampalayam, Coimbatore – 641006, TN</span>
               </div>
             </div>
           </motion.div>

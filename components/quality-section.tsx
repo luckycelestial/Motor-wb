@@ -6,10 +6,10 @@ import { Award, Shield, Zap, Trophy } from 'lucide-react';
 
 export function QualitySection() {
   const certifications = [
-    { icon: Award, title: 'ISO 9001:2015', description: 'Quality Management System certified' },
-    { icon: Shield, title: 'ISO 14001:2015', description: 'Environmental Management certified' },
-    { icon: Trophy, title: 'Industry Awards', description: 'Multiple excellence awards' },
-    { icon: Zap, title: 'Advanced Testing', description: 'Comprehensive quality testing facilities' },
+    { icon: Award, title: 'ISO 9001:2008', description: 'Quality Management System certified' },
+    { icon: Trophy, title: 'BIS-Marked', description: 'BIS-marked energy efficient products' },
+    { icon: Shield, title: 'Advanced Testing', description: 'Comprehensive quality testing facilities' },
+    { icon: Zap, title: 'Performance', description: '0.5 HP to 100+ HP pump range' },
   ];
 
   return (
@@ -50,7 +50,7 @@ export function QualitySection() {
           >
             <h3 className="text-2xl font-bold mb-4">Our Quality Promise</h3>
             <p className="text-foreground/80 text-lg max-w-3xl mx-auto">
-              Every product undergoes rigorous testing to ensure it meets and exceeds international standards. We conduct comprehensive inspections at multiple stages of the manufacturing process to guarantee excellence.
+              Every pump is tested rigorously to ensure optimal performance, reliability, and durability. Our ISO 9001:2008 certified process guarantees that each product meets international standards and delivers exceptional value to our customers.
             </p>
           </motion.div>
         </ScrollAnimationWrapper>

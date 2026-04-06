@@ -6,14 +6,14 @@ import { Check } from 'lucide-react';
 
 export function WhyUsSection() {
   const reasons = [
-    'Industry-leading quality standards and certifications',
-    'State-of-the-art manufacturing facilities',
-    'Expert team with decades of combined experience',
-    'Customization capabilities for unique requirements',
-    'Competitive pricing without compromising quality',
-    'Reliable on-time delivery and logistics',
-    'Dedicated customer support and technical assistance',
-    'Commitment to continuous innovation and improvement',
+    'ISO 9001:2008 Certified Manufacturing Process',
+    'BIS-Marked Energy Efficient Products',
+    'State-of-the-Art Factory in Coimbatore',
+    'Trusted by Farmers, Contractors & Industries Across India',
+    'Open to Joint Ventures & Overseas Distribution Tie-ups',
+    'Comprehensive After-Sales Support & Service Network',
+    'Full range from 0.5 HP to 100+ HP pump solutions',
+    'Proudly Made in India',
   ];
 
   return (
@@ -22,7 +22,7 @@ export function WhyUsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative h-96 rounded-lg overflow-hidden">
             <img
-              src="https://placehold.co/500x600/1e90ff/0a1628?text=Why+Choose+Us"
+              src="https://placehold.co/600x450/0f1f3d/1E90FF?text=Jai+Jansi+Factory"
               alt="Why Choose Us"
               className="w-full h-full object-cover"
             />
