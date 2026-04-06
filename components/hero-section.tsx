@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 export function HeroSection() {
   const words = ['Precision', 'Reliability', 'Efficiency', 'Solutions'];
@@ -63,20 +64,19 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <Button size="lg" className="bg-primary hover:bg-primary/80 text-white font-bold text-lg px-8 h-14 rounded-full shadow-lg">
-            Explore Products
+          <Button size="lg" asChild className="bg-primary hover:bg-primary/80 text-white font-bold text-lg px-8 h-14 rounded-full shadow-lg">
+            <Link href="#products">Explore Products</Link>
           </Button>
           <Button
             size="lg"
             variant="outline"
+            asChild
             className="border-primary text-primary hover:bg-primary hover:text-white font-bold text-lg px-8 h-14 rounded-full"
           >
-            Contact Us
+            <Link href="#contact">Contact Us</Link>
           </Button>
         </motion.div>
       </div>
     </section>
   );
 }
-
-
