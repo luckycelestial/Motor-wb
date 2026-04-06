@@ -3,6 +3,14 @@ import { notFound } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 
 export function generateStaticParams() {
   return products.map((product) => ({
@@ -66,6 +74,77 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
             </div>
           </div>
         </div>
+
+        {/* Detailed Extracted Variants */}
+        {product.variants && product.variants.length > 0 && (
+          <div className="mt-12 space-y-16">
+            {product.variants.map((variant: any, idx: number) => (
+              <div key={idx} className="bg-card border border-border rounded-xl shadow-sm p-8">
+                <h3 className="text-2xl font-bold text-primary border-b border-border pb-4 mb-6" style={{ fontFamily: 'var(--font-bebas)' }}>
+                  {variant.title}
+                </h3>
+
+                {variant.tableData && (
+                  <div className="mb-8">
+                    <h4 className="text-xl font-semibold mb-4 text-foreground/90">Technical Specifications</h4>
+                    <div className="overflow-x-auto border border-border rounded-lg">
+                      <Table>
+                        <TableHeader className="bg-muted">
+                          <TableRow>
+                            {variant.tableData.headers.map((header: string, i: number) => (
+                              <TableHead key={i} className="font-bold text-foreground">
+                                {header}
+                              </TableHead>
+                            ))}
+                          </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                          {variant.tableData.rows.map((row: string[], rowIndex: number) => (
+                            <TableRow key={rowIndex} className="hover:bg-muted/50">
+                              {row.map((cell: string, cellIndex: number) => (
+                                <TableCell key={cellIndex} className="align-top">
+                                  <div className="whitespace-pre-wrap">{cell}</div>
+                                </TableCell>
+                              ))}
+                            </TableRow>
+                          ))}
+                        </TableBody>
+                      </Table>
+                    </div>
+                  </div>
+                )}
+
+                {variant.applications && variant.applications.length > 0 && (
+                  <div className="mb-8">
+                    <h4 className="text-xl font-semibold mb-4 text-foreground/90">Applications</h4>
+                    <ul className="list-disc list-inside space-y-2 text-foreground/80 ml-4">
+                      {variant.applications.map((app: string, i: number) => (
+                        <li key={i} className="leading-relaxed">{app}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {variant.images && variant.images.length > 0 && (
+                  <div>
+                    <h4 className="text-xl font-semibold mb-4 text-foreground/90">Product Gallery</h4>
+                    <div className="flex flex-wrap items-center gap-6">
+                      {variant.images.map((img: string, i: number) => (
+                        <div key={i} className="bg-white p-2 rounded-lg border border-border shadow-sm flex items-center justify-center">
+                          <img
+                            src={img}
+                            alt={`${variant.title} image ${i + 1}`}
+                            className="max-h-32 object-contain hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

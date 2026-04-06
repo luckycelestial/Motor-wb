@@ -45,7 +45,48 @@ export const products = [
     description: 'Compact and efficient design', 
     icon: '⚙️', 
     image: 'https://image.pollinations.ai/prompt/industrial%20centrifugal%20pump%20motor%20close%20up%20photography',
-    details: 'Engineered for smooth flow and quiet operation, our monoblock pumps integrate motor and pump into a single unit. They are compact, occupy minimum space, and are widely utilized in pressure boosting systems, HVAC installations, and water supply applications.'
+    details: 'Engineered for smooth flow and quiet operation, our monoblock pumps integrate motor and pump into a single unit. They are compact, occupy minimum space, and are widely utilized in pressure boosting systems, HVAC installations, and water supply applications.',
+    variants: [
+      {
+        title: "Single phase mono block pumps",
+        tableData: {
+          headers: ["TYPE", "POWER RANGE", "HEAD RANGE", "DISCHARGE RANGE", "PUMP SIZES IN MM"],
+          rows: [
+            ["Centrifugal Mono Block", "0.5 hp to 2 hp", "7 mts to 42 mts", "50 lpm to 1000 lpm", "25x25 & 32x25 mm\n40x40 & 50x40 mm\n50x50 & 65x50 mm\n75x65 & 75x75 mm"]
+          ]
+        },
+        applications: [
+          "Civil / Domestic / Agriculture / Industrial",
+          "Pressure boosting for irrigation for washing plants.",
+          "Irrigation cooling circuits & Gardening."
+        ],
+        images: [
+          "https://www.jaijansi.com/productimg/centri01.png",
+          "https://www.jaijansi.com/productimg/centri02.png",
+          "https://www.jaijansi.com/productimg/centri03.png",
+          "https://www.jaijansi.com/productimg/centri04.png",
+          "https://www.jaijansi.com/productimg/centri05.png"
+        ]
+      },
+      {
+        title: "Three phase mono block pumps",
+        tableData: {
+          headers: ["TYPE", "POWER RANGE", "HEAD RANGE", "DISCHARGE RANGE", "PUMP SIZES IN MM"],
+          rows: [
+            ["High speed 2880 rpm", "3 hp to 15 hp", "8 mts to 50 mts", "60 lpm to 2500 lpm", "50x50 & 65x50 mm\n75x65 & 100x75 mm\n& 100x100 mm"],
+            ["Slow speed 1440 rpm", "3 hp to 15 hp", "8 mts to 50 mts", "60 lpm to 2500 lpm", "50x50 & 65x50 mm\n75x65 & 100x75 mm\n100x100 & 150x150 mm"]
+          ]
+        },
+        applications: [
+          "Agriculture Irrigation and Drip sprinkler Irrigation",
+          "Public water supply",
+          "Industries applications, Water circulation applications."
+        ],
+        images: [
+          "https://www.jaijansi.com/productimg/centri06.png"
+        ]
+      }
+    ]
   },
   { 
     id: 'jet-pump-sets',
