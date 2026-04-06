@@ -1,14 +1,16 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Geist, Geist_Mono, Bebas_Neue, DM_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const _bebasNeue = Bebas_Neue({ subsets: ["latin"], weight: ["400"], variable: "--font-bebas" });
+const _dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" });
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Jai Jansi Industries - Premium Manufacturing Solutions',
+  description: 'Leading manufacturer of high-quality industrial products and solutions',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -35,8 +37,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className="font-sans antialiased">
+    <html lang="en" className={`${_bebasNeue.variable} ${_dmSans.variable}`}>
+      <body className="font-sans antialiased dark">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
