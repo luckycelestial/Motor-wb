@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { motion } from 'framer-motion';
 import { ScrollAnimationWrapper } from './scroll-animation-wrapper';
@@ -17,31 +17,87 @@ export function ProductsSection() {
     { 
       name: 'Borewell Submersible Pumps', 
       description: 'V3 / V4 / V6 - Single & Three Phase', 
-      icon: '??', 
+      icon: '💧', 
       image: 'https://www.jaijansi.com/img/l03.png',
       details: 'Our Borewell Submersible Pumps (V3, V4, and V6 series) are designed for deep well applications. These pumps offer superior performance with high discharge rates and are suitable for both single-phase and three-phase power supplies, making them ideal for agriculture, industrial use, and municipal water supply.'
     },
     { 
       name: 'SS304 Stainless Steel Submersible Pumps', 
       description: 'V4 / V6 (100mm & 150mm)', 
-      icon: '??', 
+      icon: '🔩', 
       image: 'https://www.jaijansi.com/img/l01.png',
       details: 'Built with premium SS304 grade stainless steel, these submersible pumps guarantee rust-free operation and long lifespan. Their corrosion-resistant properties are perfectly matched for challenging water conditions, ensuring clean water delivery for commercial and domestic needs.'
     },
     { 
-      name: 'Open Well Submersible Pumps', 
+      name: 'Open Well Submersible Pumps - Horizontal', 
       description: 'High capacity horizontal installation', 
-      icon: '??', 
+      icon: '🌊', 
       image: 'https://www.jaijansi.com/img/l02.png',
       details: 'Designed for underwater applications in shallow wells or sumps, the horizontal open well submersible pumps eliminate priming issues. These pumps provide an energy-efficient, silent operation and are optimal for irrigation, canals, and large cooling towers.'
     },
     { 
-      name: 'Self-Priming Centrifugal Pumps', 
+      name: 'Open Well Submersible Pumps - Vertical', 
+      description: 'Heavy duty vertical submersion', 
+      icon: '⬆️', 
+      image: 'https://www.jaijansi.com/img/l03.png',
+      details: 'Vertical open well submersible pumps are engineered for fluctuating water levels. With a rugged build and rust-resistant components, they ensure continuous water supply for multi-story buildings and large-scale agricultural projects.'
+    },
+    { 
+      name: 'Self-Priming Centrifugal Monoblock Pumps', 
       description: 'Automatic priming capability', 
-      icon: '??', 
+      icon: '🔄', 
       image: 'https://www.jaijansi.com/img/img01.jpg',
       details: 'Self-priming centrifugal monoblock pumps handle air-entrained water efficiently without needing manual priming every time. They are robust, highly reliable, and excel in domestic water supply, gardening, and small scale irrigation tasks.'
-    }
+    },
+    { 
+      name: 'Centrifugal Monoblock Pumps', 
+      description: 'Compact and efficient design', 
+      icon: '⚙️', 
+      image: 'https://placehold.co/400x300/0f1f3d/1E90FF?text=Centrifugal+Monoblock',
+      details: 'Engineered for smooth flow and quiet operation, our monoblock pumps integrate motor and pump into a single unit. They are compact, occupy minimum space, and are widely utilized in pressure boosting systems, HVAC installations, and water supply applications.'
+    },
+    { 
+      name: 'Jet Pump Sets', 
+      description: 'Shallow well and surface water solutions', 
+      icon: '🚿', 
+      image: 'https://placehold.co/400x300/0f1f3d/1E90FF?text=Jet+Pump',
+      details: 'Jet Pump Sets are the perfect solution for drawing water from shallow wells, tanks, and cisterns. With outstanding suction capacity and steady pressure, they deliver reliable water distribution for rural and residential homes.'
+    },
+    { 
+      name: 'Special Application Submersible Pumps', 
+      description: 'Custom engineered solutions', 
+      icon: '🛠️', 
+      image: 'https://placehold.co/400x300/0f1f3d/1E90FF?text=Special+Application',
+      details: 'Tailor-made for specialized industrial fluid handling, these pumps manage corrosive, abrasive, or high-temperature liquids safely. Custom manufactured to industry specifications for reliable chemical and wastewater management.'
+    },
+    { 
+      name: 'Borewell Compressor Pumps & Motors', 
+      description: 'Pneumatic and electric power', 
+      icon: '💨', 
+      image: 'https://placehold.co/400x300/0f1f3d/1E90FF?text=Compressor+Pumps',
+      details: 'Harness the power of compressed air for lifting water from deep borewells with low yields. Our borewell compressor pumps offer a highly durable, low-maintenance solution for challenging water extraction environments.'
+    },
+    { 
+      name: 'Energy Efficient AC Induction Motors', 
+      description: 'BIS-marked efficiency certified', 
+      icon: '⚡', 
+      image: 'https://placehold.co/400x300/0f1f3d/1E90FF?text=AC+Motors',
+      details: 'Our BIS-marked AC induction motors are designed to reduce electricity consumption while maximizing torque output. Whether for running heavy industrial machinery or agricultural pump setups, these motors are verified for long-lasting, heavy-duty performance.'
+    },
+    { 
+      name: 'Industrial Air Compressors', 
+      description: 'Reliable air compression systems', 
+      icon: '🌬️', 
+      image: 'https://placehold.co/400x300/0f1f3d/1E90FF?text=Air+Compressors',
+      details: 'Industrial air compressors by HI-FLOW are designed for high efficiency and consistent compressed air delivery. They are essential for pneumatic tools, assembly lines, and workshops that demand uninterruptible pneumatic power.'
+    },
+    { 
+      name: 'Vehicle Washers / High Pressure Washers', 
+      description: 'Professional cleaning equipment', 
+      icon: '🚗', 
+      image: 'https://placehold.co/400x300/0f1f3d/1E90FF?text=Pressure+Washers',
+      details: 'Deliver professional-grade cleaning with our robust high-pressure washers. Engineered for garages, vehicle showrooms, and extreme industrial cleaning requirements, they effectively cut through dirt, grease, and grime while minimizing water usage.'
+    },
   ];
 
   const containerVariants = {
