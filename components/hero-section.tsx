@@ -2,9 +2,17 @@
 
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
+import { useEffect, useState } from 'react';
 
 export function HeroSection() {
   const words = ['Precision', 'Reliability', 'Efficiency', 'Solutions'];
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-10 px-4 sm:px-6 lg:px-8">

@@ -5,6 +5,7 @@ import { ScrollAnimationWrapper } from './scroll-animation-wrapper';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
+import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -30,6 +31,12 @@ const contactSchema = z.object({
 type ContactFormData = z.infer<typeof contactSchema>;
 
 export function ContactSection() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const {
     register,
     handleSubmit,
@@ -41,6 +48,8 @@ export function ContactSection() {
   });
 
   const productCategory = watch('product');
+
+  if (!mounted) return null;
 
   const productCategories = [
     'Borewell Submersible Pumps',

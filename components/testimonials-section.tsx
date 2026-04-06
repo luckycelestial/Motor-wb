@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ScrollAnimationWrapper } from './scroll-animation-wrapper';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export function TestimonialsSection() {
@@ -34,6 +34,13 @@ export function TestimonialsSection() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % testimonials.length);

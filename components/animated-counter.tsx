@@ -11,10 +11,15 @@ interface AnimatedCounterProps {
 export function AnimatedCounter({ value, suffix = '' }: AnimatedCounterProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(value);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    if (!isInView) return;
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isInView || !mounted) return;
 
     let start = 0;
     const end = value;
@@ -32,7 +37,7 @@ export function AnimatedCounter({ value, suffix = '' }: AnimatedCounterProps) {
     }, 16);
 
     return () => clearInterval(timer);
-  }, [isInView, value]);
+  }, [isInView, value, mounted]);
 
   return (
     <motion.div
