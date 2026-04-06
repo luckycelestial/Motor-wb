@@ -16,10 +16,10 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-10 px-4 sm:px-6 lg:px-8">
-      {/* Background Image from jaijansi.com */}
+      {/* High Quality Background Image */}
       <div 
         className="absolute inset-0 -z-20 bg-cover bg-center"
-        style={{ backgroundImage: 'url(https://www.jaijansi.com/img/img01.jpg)', opacity: 0.15 }}
+        style={{ backgroundImage: 'url(https://image.pollinations.ai/prompt/industrial%20water%20pump%20manufacturing%20facility%20photography)', opacity: 0.15 }}
       />
       <div className="absolute inset-0 -z-10 bg-background/80" />
 
@@ -78,3 +78,5 @@ export function HeroSection() {
     </section>
   );
 }
+
+
