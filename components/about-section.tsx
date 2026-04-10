@@ -32,7 +32,7 @@ export function AboutSection() {
             </div>
           </ScrollAnimationWrapper>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-4 sm:gap-6">
             {values.map((value, index) => (
               <ScrollAnimationWrapper key={value.title} delay={index * 0.1}>
                 <motion.div

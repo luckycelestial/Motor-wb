@@ -26,7 +26,7 @@ export function StatsSection() {
           </div>
         </ScrollAnimationWrapper>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
           {stats.map((stat, index) => (
             <ScrollAnimationWrapper key={stat.label} delay={index * 0.1}>
               <motion.div

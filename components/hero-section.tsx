@@ -16,7 +16,7 @@ export function HeroSection() {
   if (!mounted) return null;
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-10 px-4 sm:px-6 lg:px-8">
+    <section className="relative min-h-[80vh] md:min-h-screen flex flex-col items-center justify-center overflow-hidden pt-24 sm:pt-20 pb-12 sm:pb-10 px-4 sm:px-6 lg:px-8">
       {/* High Quality Background Image */}
       <div 
         className="absolute inset-0 -z-20 bg-cover bg-center"
