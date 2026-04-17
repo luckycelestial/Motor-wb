@@ -18,7 +18,7 @@ export function JVBannerSection() {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-secondary/20 to-transparent -z-10" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/30 -z-10" />
           <img
-            src="https://placehold.co/1200x400/1e90ff/0a1628?text=Joint+Ventures"
+            src="https://placehold.co/1200x400/1e90ff/1e90ff?text=+"
             alt="Joint Ventures"
             className="w-full h-96 object-cover"
           />
