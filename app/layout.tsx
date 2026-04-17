@@ -12,6 +12,25 @@ export const metadata: Metadata = {
   title: 'Jai Jansi Industries - Premium Manufacturing Solutions',
   description: 'Leading manufacturer of high-quality industrial products and solutions',
   generator: 'v0.app',
+  openGraph: {
+    title: 'Jai Jansi Industries - Premium Manufacturing Solutions',
+    description: 'Leading manufacturer of high-quality industrial products and solutions',
+    images: [
+      {
+        url: '/jai.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Jai Jansi Industries Logo',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Jai Jansi Industries - Premium Manufacturing Solutions',
+    description: 'Leading manufacturer of high-quality industrial products and solutions',
+    images: ['/jai.jpg'],
+  },
   icons: {
     icon: [
       {
